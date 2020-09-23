@@ -1,0 +1,2 @@
+[global.databases]
+light_chat = { url = "./light_chat.db" }
