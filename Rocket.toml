@@ -1,2 +1,2 @@
 [global.databases]
-sqlite_logs = { url = "./light_chat.db" }
+light_chat = { url = "./light_chat.db" }
