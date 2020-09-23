@@ -1,13 +1,14 @@
+use super::schema::auths;
 use super::schema::users;
 
-#[derive(Queryable, Serialize, Deserialize)]
+#[derive(Insertable, Queryable, Serialize, Deserialize)]
 pub struct User {
-    pub id: i32,
+    pub id: String,
     pub name: String,
 }
 
-#[derive(Insertable, Deserialize)]
-#[table_name = "users"]
-pub struct InsertableUser {
-    name: String,
+#[derive(Queryable, Insertable, Deserialize)]
+pub struct Auth {
+    pub user_id: String,
+    pub token: String,
 }
