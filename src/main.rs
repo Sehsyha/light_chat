@@ -9,6 +9,7 @@ extern crate rocket_contrib;
 #[macro_use]
 extern crate serde_derive;
 
+pub mod auth;
 pub mod models;
 pub mod schema;
 pub mod server;
